@@ -8,21 +8,23 @@
 
 <body>
 <div class="login-page">
-  <h3>School Name Attendance Tracker</h3>
+  <h3>Attendance Tracker</h3>
   <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-    </form>
     <form class="login-form">
       <input type="text" placeholder="Student ID"/>
       <input type="password" placeholder="Password"/>
-      <button>login</button>
+      <button id="Login">Login</button>
     </form>
   </div>
 </div>
+    <!--Trying to link this login page to the code entry page. Validation and error catches will need to be added once this is functional.-->
+    <script>
+        document.getElementById("Login").addEventListener("click", redirectFunction);
+        
+        function redirectFunction(){
+            window.location.replace("Code Entry.html");            
+        }
+    </script>
 
 </body>
 </html>
